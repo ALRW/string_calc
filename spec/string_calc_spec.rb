@@ -16,4 +16,10 @@ describe '#intAdd' do
       expect(intAdd("5,6")).to eq(11)
     end
   end
+
+  context 'given many numbers' do
+    it 'should return the sum of any number of numbers' do
+          expect(intAdd("1,2,3,4")).to eq(10)
+    end
+  end
 end
