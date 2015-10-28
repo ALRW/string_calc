@@ -22,4 +22,9 @@ describe '#intAdd' do
           expect(intAdd("1,2,3,4")).to eq(10)
     end
   end
+  context 'given numbers that are on different lines' do
+    it 'should return the sum of all numbers' do
+      expect(intAdd("1\n2,3,4")).to eq(10)
+    end
+  end
 end
